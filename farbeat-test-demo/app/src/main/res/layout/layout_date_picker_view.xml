@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <com.lifeteam.farbeat.demo.wheelpicker.ex.YearWheelView
+        android:id="@+id/wv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/date_picker_view_margins"
+        android:layout_marginLeft="@dimen/date_picker_view_margins" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/date_picker_view_margins"
+        android:layout_marginLeft="@dimen/date_picker_view_margins"
+        android:layout_marginEnd="@dimen/date_picker_view_margins"
+        android:layout_marginRight="@dimen/date_picker_view_margins"
+        android:text="年"
+        tools:textSize="20sp" />
+
+    <com.lifeteam.farbeat.demo.wheelpicker.ex.MonthWheelView
+        android:id="@+id/wv_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/date_picker_view_margins"
+        android:layout_marginLeft="@dimen/date_picker_view_margins"
+        android:layout_marginEnd="@dimen/date_picker_view_margins"
+        android:layout_marginRight="@dimen/date_picker_view_margins"
+        android:text="月"
+        tools:textSize="20sp" />
+
+    <com.lifeteam.farbeat.demo.wheelpicker.ex.DayWheelView
+        android:id="@+id/wv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/date_picker_view_margins"
+        android:layout_marginRight="@dimen/date_picker_view_margins" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/date_picker_view_margins"
+        android:layout_marginRight="@dimen/date_picker_view_margins"
+        android:text="日"
+        tools:textSize="20sp" />
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ViewfinderView">
+
+        <attr name="inner_width" format="dimension" />
+        <attr name="inner_height" format="dimension" />
+        <attr name="inner_margintop" format="dimension" />
+        <attr name="inner_corner_color" format="color" />
+        <attr name="inner_corner_length" format="dimension" />
+        <attr name="inner_corner_width" format="dimension" />
+        <attr name="inner_scan_bitmap" format="reference" />
+        <attr name="inner_scan_speed" format="integer" />
+        <attr name="inner_scan_iscircle" format="boolean" />
+
+        <attr name="maskColor" format="color" />
+        <attr name="frameColor" format="color" />
+        <attr name="cornerColor" format="color"/>
+        <attr name="laserColor" format="color"/>
+        <attr name="labelText" format="string"/>
+        <attr name="labelTextColor" format="color"/>
+        <attr name="labelTextSize" format="dimension"/>
+        <attr name="labelTextPadding" format="dimension"/>
+        <attr name="labelTextWidth" format="dimension"/>
+        <attr name="labelTextLocation" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+        </attr>
+        <attr name="frameWidth" format="dimension"/>
+        <attr name="frameHeight" format="dimension"/>
+        <attr name="gridColumn" format="integer"/>
+        <attr name="gridHeight" format="dimension"/>
+        <attr name="laserStyle" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="line" value="1"/>
+            <enum name="grid" value="2"/>
+        </attr>
+        <attr name="cornerRectWidth" format="dimension"/>
+        <attr name="cornerRectHeight" format="dimension"/>
+        <attr name="scannerLineMoveDistance" format="dimension"/>
+        <attr name="scannerLineHeight" format="dimension"/>
+        <attr name="frameLineWidth" format="dimension"/>
+        <attr name="scannerAnimationDelay" format="integer"/>
+        <attr name="frameRatio" format="float"/>
+        <attr name="framePaddingLeft" format="dimension"/>
+        <attr name="framePaddingTop" format="dimension"/>
+        <attr name="framePaddingRight" format="dimension"/>
+        <attr name="framePaddingBottom" format="dimension"/>
+        <attr name="frameGravity" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="top" value="2"/>
+            <enum name="right" value="3"/>
+            <enum name="bottom" value="4"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="YearWheelView">
+        <attr name="wv_startYear" format="integer" />
+        <attr name="wv_endYear" format="integer" />
+        <attr name="wv_selectedYear" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MonthWheelView">
+        <attr name="wv_selectedMonth" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="DayWheelView">
+        <attr name="wv_year" format="integer" />
+        <attr name="wv_month" format="integer" />
+        <attr name="wv_selectedDay" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="WheelView">
+        <!--文字大小-->
+        <attr name="wv_textSize" format="dimension" />
+        <!--是否自适应文字大小以完全显示过长的文字-->
+        <attr name="wv_autoFitTextSize" format="boolean" />
+        <!--文字对齐方式-->
+        <attr name="wv_textAlign" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <!--文字距离边界的外边距-->
+        <attr name="wv_textBoundaryMargin" format="dimension" />
+        <!--未选中文字颜色-->
+        <attr name="wv_normalItemTextColor" format="color" />
+        <!--被选中的文字颜色-->
+        <attr name="wv_selectedItemTextColor" format="color" />
+        <!--行间距-->
+        <attr name="wv_lineSpacing" format="dimension" />
+        <!--数据为Integer类型时是否需要转换-->
+        <attr name="wv_integerNeedFormat" format="boolean" />
+        <!--Integer类型转换格式-->
+        <attr name="wv_integerFormat" format="string" />
+
+        <!--可见item数-->
+        <attr name="wv_visibleItems" format="integer" />
+        <!--当前选中下标-->
+        <attr name="wv_selectedItemPosition" format="integer" />
+        <!--是否循环滚动-->
+        <attr name="wv_cyclic" format="boolean" />
+
+        <!--是否显示分割线-->
+        <attr name="wv_showDivider" format="boolean" />
+        <!--分割线类型-->
+        <attr name="wv_dividerType" format="enum">
+            <enum name="fill" value="0" />
+            <enum name="wrap" value="1" />
+        </attr>
+        <!--分割线颜色-->
+        <attr name="wv_dividerColor" format="color" />
+        <!--分割线高度-->
+        <attr name="wv_dividerHeight" format="dimension" />
+        <!--wrap类型下分割线内边距-->
+        <attr name="wv_dividerPaddingForWrap" format="dimension" />
+
+
+        <!--是否是弯曲（3D）效果-->
+        <attr name="wv_curved" format="boolean" />
+        <!--弯曲（3D）效果左右圆弧偏移效果方向 可向指定方向偏移-->
+        <attr name="wv_curvedArcDirection" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <!--弯曲（3D）效果左右圆弧偏移效果方向系数 偏移系数-->
+        <attr name="wv_curvedArcDirectionFactor" format="float" />
+        <!--选中后折射的偏移(弯曲（3D）效果和普通效果都适用) 与字体大小的比值，1为不偏移 越小偏移越明显-->
+        <attr name="wv_refractRatio" format="float" />
+        <!-- Deprecated 已过时 请使用 wv_refractRatio -->
+        <attr name="wv_curvedRefractRatio" format="float" />
+
+        <!--是否绘制选中区域-->
+        <attr name="wv_drawSelectedRect" format="boolean" />
+        <!--选中区域颜色-->
+        <attr name="wv_selectedRectColor" format="color" />
+        <!--选中区域/分割线上下偏移，通过移动分割线上下限制的位置来实现扩大/缩小显示区域-->
+        <attr name="wv_dividerOffset" format="dimension" />
+    </declare-styleable>
+</resources>

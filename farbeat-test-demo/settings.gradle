@@ -1,0 +1,14 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://mirrors.huaweicloud.com/repository/maven/huaweicloudsdk/'}
+        maven { url 'https://mirrors.huaweicloud.com/repository/maven/'}
+//        maven { url "https://developer.huawei.com/repo/" }
+//        maven { url 'http://4thline.org/m2'}
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "FarBeatDemo"
+include ':app'
