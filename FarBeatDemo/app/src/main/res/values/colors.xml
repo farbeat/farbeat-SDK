@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <color name="main_color">#2196F3</color>
+    <color name="bg">#F1F1F1</color>
+    <color name="line">#E1E1E1</color>
+    <color name="normal">#B4B4B4</color>
+    <color name="checked">@color/main_color</color>
+    <color name="warning">#F3A02B</color>
+    <color name="error">#DF3023</color>
+    <color name="gray6">#666666</color>
+    <color name="gray9">#999999</color>
+
+    <!--ZXing扫码-->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_frame">#7F1FB3E2</color>
+    <color name="viewfinder_corner">#FF1FB3E2</color>
+    <color name="viewfinder_laser">#FF1FB3E2</color>
+    <color name="viewfinder_text_color">#FFC0C0C0</color>
+    <color name="zxl_capture_status_bar_color">#00000000</color>
+    <color name="zxl_capture_navigation_bar_color">#00000000</color>
+</resources>

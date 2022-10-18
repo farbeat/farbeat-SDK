@@ -1,0 +1,15 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://mirrors.huaweicloud.com/repository/maven/huaweicloudsdk/'}
+        maven { url 'https://mirrors.huaweicloud.com/repository/maven/'}
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.4"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

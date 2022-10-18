@@ -1,0 +1,6 @@
+{
+  "basePackage": [],
+  "applicationInitialize": "ApplicationInitialize",
+  "deviceManager": "DeviceManager",
+  "realTimeData": "RealTimeData"
+}

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:drawableTop="@mipmap/success"
+                android:drawablePadding="8dp"
+                android:gravity="center_horizontal"
+                android:text="成功"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/result_look"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:layout_margin="8dp"
+                android:text="查看文件"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/result_info_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:text="主机："
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/result_host"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:inputType="textEmailAddress"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:text="smtp.mxhichina.com"
+                        android:textSize="14sp"
+                        android:background="@color/transparent"
+                        android:textColorHint="@color/gray9"
+                        android:hint="请输入邮箱主机(HOST)" />
+                </LinearLayout>
+
+                <include layout="@layout/horizontal_line8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:text="端口："
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/result_port"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:inputType="textEmailAddress"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:text="25"
+                        android:background="@color/transparent"
+                        android:textColorHint="@color/gray9"
+                        android:hint="请输入邮箱端口(PORT)" />
+                </LinearLayout>
+
+                <include layout="@layout/horizontal_line8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:text="发件人："
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/result_from_email"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:inputType="textEmailAddress"
+                        android:layout_height="match_parent"
+                        android:text="lining@greatteam.org.cn"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:background="@color/transparent"
+                        android:textColorHint="@color/gray9"
+                        android:hint="请输入发件人邮箱" />
+                </LinearLayout>
+
+                <include layout="@layout/horizontal_line8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:text="密码："
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/result_from_pwd"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:inputType="textPassword"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:background="@color/transparent"
+                        android:textColorHint="@color/gray9"
+                        android:hint="请输入发件人邮箱密码" />
+                </LinearLayout>
+
+                <include layout="@layout/horizontal_line8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical"
+                        android:text="收件人："
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/result_to_email"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:inputType="textEmailAddress"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:background="@color/transparent"
+                        android:textColorHint="@color/gray9"
+                        android:hint="请输入收件人邮箱" />
+                </LinearLayout>
+
+                <include layout="@layout/horizontal_line8" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/result_send_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:layout_margin="8dp"
+                android:text="发送邮件"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="AppId："
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/splash_id"
+            style="@style/MaterialDesign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:paddingTop="10dp"
+            android:hint="扫码获取 AppId"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray9"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/splash_id_scan"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:src="@mipmap/scan_gray" />
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_line8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="AppSecret："
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/splash_secret"
+            style="@style/MaterialDesign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="扫码获取 AppSecret"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray9"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/splash_secret_scan"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:src="@mipmap/scan_gray" />
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_line8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="DpSdkSn："
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/splash_sn"
+            style="@style/MaterialDesign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="扫码获取 DpSdkSn"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray9"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/splash_sn_scan"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:src="@mipmap/scan_gray" />
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_line8" />
+
+    <TextView
+        android:id="@+id/splash_device_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="farbeat-sdk-device.json："
+        android:onClick="onClick"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/splash_sdk_device"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:hint="将初始化文件：farbeat-sdk-device.json内容黏贴在此处"
+        android:lineSpacingExtra="3dp"
+        android:gravity="start"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/splash_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:layout_margin="10dp"
+        android:text="初始化配置信息"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+</LinearLayout>
